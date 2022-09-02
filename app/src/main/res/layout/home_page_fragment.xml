@@ -262,6 +262,7 @@
                                 android:orientation="horizontal">
 
                                 <LinearLayout
+                                    android:id="@+id/button_product_subsektor_first"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginEnd="20dp"
@@ -332,6 +333,7 @@
                                 </LinearLayout>
 
                                 <LinearLayout
+                                    android:id="@+id/button_product_subsektor_second"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_marginEnd="20dp"
