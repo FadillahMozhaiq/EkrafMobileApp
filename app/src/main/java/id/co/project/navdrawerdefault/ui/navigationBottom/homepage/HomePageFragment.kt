@@ -31,8 +31,26 @@ class HomePageFragment : Fragment() {
             // Move to fragment Pelaku Ekraf
             moveToMerchant()
 
+            // Move to Fragment Sub Sektor
+            moveToSubSectorNewInfo()
+
+            // Mo To Fragment Sub Sektor
+            moveToSubSectorMerchant()
+
         }
 
+    }
+
+    private fun moveToSubSectorMerchant() {
+        binding.buttonProductSubsektorSecond.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homePageFragment_to_nav_merchant)
+        }
+    }
+
+    private fun moveToSubSectorNewInfo() {
+        binding.buttonProductSubsektorFirst.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homePageFragment_to_nav_new_info)
+        }
     }
 
     private fun moveToMerchant() {
