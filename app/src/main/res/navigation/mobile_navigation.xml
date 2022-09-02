@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homePageFragment">
+
+    <fragment
+        android:id="@+id/nav_new_info"
+        android:name="id.co.project.navdrawerdefault.ui.navigationDrawer.navNewInfo.NewInfoFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/fragment_info_ekraf_terbaru" />
+
+    <fragment
+        android:id="@+id/nav_merchant"
+        android:name="id.co.project.navdrawerdefault.ui.navigationDrawer.navMerchant.MerchantFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/fragment_pelaku_ekraf" />
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="id.co.project.navdrawerdefault.ui.navigationBottom.homepage.HomePageFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/home_page_fragment" >
+        <action
+            android:id="@+id/action_homePageFragment_to_nav_merchant"
+            app:destination="@id/nav_merchant" />
+        <action
+            android:id="@+id/action_homePageFragment_to_nav_new_info"
+            app:destination="@id/nav_new_info" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="id.co.project.navdrawerdefault.ui.navigationBottom.search.SearchFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="id.co.project.navdrawerdefault.ui.navigationBottom.favorite.FavoriteFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/favorite_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="id.co.project.navdrawerdefault.ui.navigationBottom.profile.ProfileFragment"
+        android:label="Ekraf Mobile"
+        tools:layout="@layout/profile_fragment" />
+    <activity
+        android:id="@+id/splashScreen"
+        android:name="id.co.project.navdrawerdefault.ui.splashScreen.SplashScreen"
+        android:label="activity_spalsh_screen"
+        tools:layout="@layout/activity_spalsh_screen" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="id.co.project.navdrawerdefault.ui.authentication.LoginActivity"
+        android:label="LoginActivity"
+        tools:layout="@layout/activity_login"/>
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="id.co.project.navdrawerdefault.ui.authentication.RegisterActivity"
+        android:label="RegisterActivity"
+        tools:layout="@layout/activity_register"/>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="id.co.project.navdrawerdefault.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+
+</navigation>
