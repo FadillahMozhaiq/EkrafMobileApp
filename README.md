@@ -1,0 +1,2 @@
+# EkrafMobileApp
+An app that used for data collection and mapping of creative economy actors. The application will focused on implementing a mobile application-based information system that used by the City of Balikpapan. So that will get a big data / big data on creative economy actors in Balikpapan City which is better organized and can help the government in gathering the good potential of economic actors creative ways to advance the economy in the city of Balikpapan.
