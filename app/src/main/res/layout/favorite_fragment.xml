@@ -13,7 +13,7 @@
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:fontFamily="@font/poppins_semi_bold"
-        android:text="Fragment Favorite"
+        android:text="@string/fragment_favorite"
         android:textColor="@color/purple_700"
         android:textSize="@dimen/_16ssp"
         app:layout_constraintBottom_toBottomOf="parent"
