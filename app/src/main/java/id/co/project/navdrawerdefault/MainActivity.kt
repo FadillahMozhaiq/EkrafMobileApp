@@ -3,13 +3,12 @@ package id.co.project.navdrawerdefault
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.view.Menu
 import android.view.WindowManager
-import com.google.android.material.navigation.NavigationView
-import androidx.navigation.findNavController
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
 import androidx.navigation.ui.*
+import com.google.android.material.navigation.NavigationView
 import id.co.project.navdrawerdefault.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

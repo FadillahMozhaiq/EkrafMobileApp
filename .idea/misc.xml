@@ -9,6 +9,7 @@
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/bg_card_second.xml" value="0.144" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/bg_edit_text.xml" value="0.166" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/bg_edit_text_login.xml" value="0.144" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/bg_linear_clickable.xml" value="0.157" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/bg_search.xml" value="0.144" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_frame.xml" value="0.166" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_home_page.xml" value="0.166" />
@@ -21,10 +22,12 @@
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_merchant.xml" value="0.127" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_plus.xml" value="0.1" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_search_nav.xml" value="0.127" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_spinner.xml" value="0.1015" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_teks_ekraf_mobile.xml" value="0.16666666666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_text_field_email.xml" value="0.166" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/shape.xml" value="0.157" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
-        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_main.xml" value="0.3040834057341442" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_main2.xml" value="0.13186813186813187" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_register.xml" value="0.3812636165577342" />
