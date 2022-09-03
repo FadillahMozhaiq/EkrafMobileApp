@@ -17,7 +17,8 @@
             android:background="@drawable/image_3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image">
         </ImageView>
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,11 +32,11 @@
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/white"
-                android:text="Info Ekraf Terbaru"/>
+                android:text="@string/info_ekraf_terbaru"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="50dp"
                 android:layout_weight="3"
                 android:background="@drawable/bg_card"
@@ -46,15 +47,18 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="14dp"
                     android:layout_marginEnd="14dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
                     <ImageView
                         android:id="@+id/product_picture"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"
+                        android:layout_height="190dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
-                        android:src="@drawable/img_product_4" />
+                        android:src="@drawable/img_product_4"
+                        android:contentDescription="@string/image" />
 
 
 
@@ -64,8 +68,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text="Kuliner"
+                        android:text="@string/kuliner"
                         android:textColor="@color/purple_700"
                         android:textSize="@dimen/_12ssp" />
 
@@ -74,11 +79,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Mantau Balikpapan"
+                        android:text="@string/mantau_balikpapan"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -88,7 +93,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Diposting : "
+                            android:text="@string/diposting"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_10ssp" />
@@ -98,7 +103,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="1 Juli 2022"
+                            android:text="@string/_1_juli_2022"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_10ssp" />
                     </LinearLayout>
@@ -111,7 +116,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Diposting Oleh : "
+                            android:text="@string/diposting_oleh"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_10ssp" />
@@ -121,7 +126,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Jefri Ferdinand"
+                            android:text="@string/jefri_ferdinand"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_10ssp" />
                     </LinearLayout>

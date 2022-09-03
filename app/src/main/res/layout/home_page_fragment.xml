@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/white"
-            android:text="Ekraf Besar,"/>
+            android:text="@string/ekraf_besar"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:layout_marginStart="20dp"
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/white"
-            android:text="Ekonomi Berjaya,">
+            android:text="@string/ekonomi_berjaya">
         </TextView>
 
         <SearchView
@@ -41,7 +41,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="33dp"
             android:layout_weight="3"
             android:background="@drawable/bg_card">
@@ -49,7 +49,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -69,7 +70,7 @@
                             android:fontFamily="@font/poppins_medium"
                             android:layout_marginStart="@dimen/_16sdp"
                             android:layout_marginTop="@dimen/_10sdp"
-                            android:text="Info Terbaru Ekraf"
+                            android:text="@string/info_terbaru_ekraf"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
                         <HorizontalScrollView
@@ -77,7 +78,7 @@
                             android:layout_height="wrap_content">
 
                             <LinearLayout
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginBottom="@dimen/_20sdp"
                                 android:orientation="horizontal">
@@ -85,22 +86,27 @@
                                     android:id="@+id/button_product_first"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginEnd="20dp"
-                                    android:orientation="vertical">
+                                    android:layout_marginStart="10dp"
+                                    android:clickable="true"
+                                    android:padding="@dimen/_8sdp"
+                                    android:background="@drawable/bg_linear_clickable"
+                                    android:layout_marginEnd="6dp"
+                                    android:orientation="vertical"
+                                    android:focusable="true">
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="match_parent"
                                         android:layout_height="75dp"
-                                        android:layout_marginTop="@dimen/_8sdp"
                                         android:elevation="10dp"
-                                        app:cardCornerRadius="10dp">
+                                        app:cardCornerRadius="10dp"
+                                        tools:ignore="TooDeepLayout">
 
                                         <ImageView
                                             android:id="@+id/product_picture"
                                             android:layout_width="match_parent"
                                             android:layout_height="185dp"
                                             android:layout_gravity="center"
-                                            android:src="@drawable/img_product_4" />
+                                            android:src="@drawable/img_product_4"
+                                            android:contentDescription="@string/image" />
                                     </androidx.cardview.widget.CardView>
 
                                     <TextView
@@ -109,7 +115,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Kuliner"
+                                        android:text="@string/kuliner"
                                         android:textColor="@color/purple_700"
                                         android:textSize="12sp" />
 
@@ -118,7 +124,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Mantau Balikpapan"
+                                        android:text="@string/mantau_balikpapan"
                                         android:textColor="@color/black"
                                         android:textSize="14sp" />
 
@@ -128,27 +134,30 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="@dimen/_4sdp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Ruko Balikpapan Baru"
+                                        android:text="@string/ruko_balikpapan_baru"
                                         android:textColor="@color/black"
                                         android:textSize="12sp" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        tools:ignore="UseCompoundDrawables">
 
                                         <ImageView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:src="@drawable/ic_location" />
+                                            android:src="@drawable/ic_location"
+                                            android:contentDescription="@string/image" />
                                         <TextView
                                             android:id="@+id/alamat_lengkap"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:fontFamily="@font/poppins_regular"
-                                            android:text="Kompleks Balikpapan Baru"
+                                            android:text="@string/kompleks_balikpapan_baru"
                                             android:textColor="@color/black"
-                                            android:textSize="10sp" />
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
                                     </LinearLayout>
 
                                 </LinearLayout>
@@ -157,12 +166,13 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:paddingBottom="@dimen/_10sdp"
-                                    android:layout_marginEnd="20dp"
+                                    android:padding="@dimen/_8sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:background="@drawable/bg_linear_clickable"
                                     android:orientation="vertical">
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="match_parent"
                                         android:layout_height="75dp"
-                                        android:layout_marginTop="@dimen/_8sdp"
                                         android:elevation="10dp"
                                         app:cardCornerRadius="10dp">
 
@@ -170,7 +180,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="185dp"
                                             android:layout_gravity="center"
-                                            android:src="@drawable/img_product_3" />
+                                            android:src="@drawable/img_product_3"
+                                            android:contentDescription="@string/image" />
                                     </androidx.cardview.widget.CardView>
 
                                     <TextView
@@ -178,7 +189,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Aplikasi"
+                                        android:text="@string/aplikasi"
                                         android:textColor="@color/purple_700"
                                         android:textSize="12sp" />
 
@@ -186,7 +197,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Aplikasi Ekraf Mobile"
+                                        android:text="@string/aplikasi_ekraf_mobile"
                                         android:textColor="@color/black"
                                         android:textSize="14sp" />
 
@@ -195,7 +206,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_marginTop="@dimen/_4sdp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Co-WorkSpace "
+                                        android:text="@string/co_workspace"
                                         android:textColor="@color/black"
                                         android:textSize="12sp" />
 
@@ -203,20 +214,23 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:paddingBottom="10dp"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        tools:ignore="UseCompoundDrawables">
 
                                         <ImageView
                                             android:layout_width="wrap_content"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/ic_location" />
+                                            android:src="@drawable/ic_location"
+                                            android:contentDescription="@string/image" />
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:fontFamily="@font/poppins_regular"
-                                            android:text="Jl. Sudirman Kota \nBalikpapan"
+                                            android:text="@string/jl_sudirman_kota_nbalikpapan"
                                             android:textColor="@color/black"
-                                            android:textSize="10sp" />
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
                                     </LinearLayout>
 
                                 </LinearLayout>
@@ -249,7 +263,7 @@
                             android:fontFamily="@font/poppins_medium"
                             android:layout_marginStart="@dimen/_16sdp"
                             android:layout_marginTop="@dimen/_10sdp"
-                            android:text="Sub Sektor Ekonomi Kreatif"
+                            android:text="@string/sub_sektor_ekonomi_kreatif"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -265,15 +279,17 @@
                                     android:id="@+id/button_product_subsektor_first"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginEnd="20dp"
-                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
                                     android:layout_marginBottom="20dp"
+                                    android:padding="@dimen/_8sdp"
+                                    android:background="@drawable/bg_linear_clickable"
+                                    android:clickable="true"
                                     android:paddingBottom="@dimen/_10sdp"
                                     android:orientation="vertical">
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="match_parent"
                                         android:layout_height="75dp"
-                                        android:layout_marginTop="@dimen/_8sdp"
                                         android:elevation="10dp"
                                         app:cardCornerRadius="10dp">
 
@@ -281,7 +297,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="185dp"
                                             android:layout_gravity="center"
-                                            android:src="@drawable/img_product_3" />
+                                            android:src="@drawable/img_product_3"
+                                            android:contentDescription="@string/image" />
                                     </androidx.cardview.widget.CardView>
 
                                     <TextView
@@ -289,7 +306,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Aplikasi"
+                                        android:text="@string/aplikasi"
                                         android:textColor="@color/purple_700"
                                         android:textSize="12sp" />
 
@@ -297,7 +314,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Aplikasi Ekraf Mobile"
+                                        android:text="@string/aplikasi_ekraf_mobile"
                                         android:textColor="@color/black"
                                         android:textSize="14sp" />
 
@@ -306,7 +323,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_marginTop="@dimen/_4sdp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Co-WorkSpace "
+                                        android:text="@string/co_workspace"
                                         android:textColor="@color/black"
                                         android:textSize="12sp" />
 
@@ -314,20 +331,23 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:paddingBottom="10dp"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        tools:ignore="UseCompoundDrawables">
 
                                         <ImageView
                                             android:layout_width="wrap_content"
                                             android:layout_height="match_parent"
-                                            android:src="@drawable/ic_location" />
+                                            android:src="@drawable/ic_location"
+                                            android:contentDescription="@string/image" />
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:fontFamily="@font/poppins_regular"
-                                            android:text="Jl. Sudirman Kota \nBalikpapan"
+                                            android:text="@string/jl_sudirman_kota_nbalikpapan"
                                             android:textColor="@color/black"
-                                            android:textSize="10sp" />
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
                                     </LinearLayout>
 
                                 </LinearLayout>
@@ -337,13 +357,15 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_marginEnd="20dp"
+                                    android:clickable="true"
+                                    android:background="@drawable/bg_linear_clickable"
+                                    android:padding="@dimen/_8sdp"
                                     android:layout_marginBottom="30dp"
                                     android:orientation="vertical">
 
                                     <androidx.cardview.widget.CardView
                                         android:layout_width="match_parent"
                                         android:layout_height="75dp"
-                                        android:layout_marginTop="@dimen/_8sdp"
                                         android:elevation="10dp"
                                         app:cardCornerRadius="10dp">
 
@@ -351,7 +373,8 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="185dp"
                                             android:layout_gravity="center"
-                                            android:src="@drawable/img_product_4" />
+                                            android:src="@drawable/img_product_4"
+                                            android:contentDescription="@string/image" />
                                     </androidx.cardview.widget.CardView>
 
                                     <TextView
@@ -359,7 +382,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="8dp"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Kuliner"
+                                        android:text="@string/kuliner"
                                         android:textColor="@color/purple_700"
                                         android:textSize="12sp" />
 
@@ -367,7 +390,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/poppins_medium"
-                                        android:text="Mantau Balikpapan"
+                                        android:text="@string/mantau_balikpapan"
                                         android:textColor="@color/black"
                                         android:textSize="14sp" />
 
@@ -376,27 +399,30 @@
                                         android:layout_height="wrap_content"
                                         android:fontFamily="@font/poppins_medium"
                                         android:layout_marginTop="@dimen/_4sdp"
-                                        android:text="Ruko Balikpapan Baru"
+                                        android:text="@string/ruko_balikpapan_baru"
                                         android:textColor="@color/black"
                                         android:textSize="12sp" />
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:orientation="horizontal">
+                                        android:orientation="horizontal"
+                                        tools:ignore="UseCompoundDrawables">
 
                                         <ImageView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:src="@drawable/ic_location" />
+                                            android:src="@drawable/ic_location"
+                                            android:contentDescription="@string/image" />
 
                                         <TextView
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:fontFamily="@font/poppins_regular"
-                                            android:text="Kompleks Balikpapan Baru"
+                                            android:text="@string/kompleks_balikpapan_baru"
                                             android:textColor="@color/black"
-                                            android:textSize="10sp" />
+                                            android:textSize="10sp"
+                                            tools:ignore="SmallSp" />
                                     </LinearLayout>
 
                                 </LinearLayout>
@@ -405,23 +431,7 @@
                         </HorizontalScrollView>
                     </LinearLayout>
 
-
-
-
                 </androidx.cardview.widget.CardView>
-<!--                <androidx.recyclerview.widget.RecyclerView-->
-<!--                    android:id="@+id/recycler_item"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:layout_marginStart="4dp"-->
-<!--                    android:layout_marginEnd="4dp"-->
-<!--                    android:layout_marginBottom="@dimen/_40sdp"-->
-<!--                    android:elevation="18dp"-->
-<!--                    android:orientation="vertical"-->
-<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--                    tools:listitem="@layout/item_info_ekraf_terbaru">-->
-<!--                </androidx.recyclerview.widget.RecyclerView>-->
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

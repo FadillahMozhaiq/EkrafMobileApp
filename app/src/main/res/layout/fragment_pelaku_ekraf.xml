@@ -17,7 +17,8 @@
             android:background="@drawable/image_4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -30,11 +31,11 @@
                 android:layout_marginStart="22dp"
                 android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/white"
-                android:text="Pelaku Ekraf"/>
+                android:text="@string/pelaku_ekraf"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginTop="50dp"
                 android:layout_weight="3"
                 android:background="@drawable/bg_card"
@@ -45,16 +46,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginEnd="14dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
 
                     <ImageView
                         android:id="@+id/product_picture"
                         android:layout_width="wrap_content"
-                        android:layout_height="280dp"
+                        android:layout_height="240dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
-                        android:src="@drawable/img_product_3" />
+                        android:src="@drawable/img_product_3"
+                        android:contentDescription="@string/image" />
 
                     <TextView
                         android:id="@+id/ekraf_name"
@@ -62,10 +66,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Studio Aplikasi 22 Balikpapan"
+                        android:text="@string/studio_aplikasi_22_balikpapan"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/_16ssp" />
+                        android:textSize="@dimen/_14ssp" />
 
                     <TextView
                         android:id="@+id/subsektor_name"
@@ -74,7 +79,7 @@
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginEnd="@dimen/_8sdp"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Sub Sektor: Aplikasi"
+                        android:text="@string/sub_sektor_aplikasi"
                         android:textColor="@color/purple_700"
                         android:textSize="@dimen/_12ssp" />
 
@@ -88,7 +93,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Pemilik : "
+                            android:text="@string/pemilik"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
 
@@ -97,7 +102,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Jefri Ferdinand"
+                            android:text="@string/jefri_ferdinand"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
                     </LinearLayout>
@@ -112,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Badan Hukum : "
+                            android:text="@string/badan_hukum"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
                         <TextView
@@ -120,7 +125,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Perseroan Terbatas (PT)"
+                            android:text="@string/perseroan_terbatas_pt"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
 
@@ -136,7 +141,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Tahun Berdiri : "
+                            android:text="@string/tahun_berdiri"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
 
@@ -145,7 +150,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="2022"
+                            android:text="@string/_2022"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
                     </LinearLayout>
@@ -160,7 +165,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_8sdp"
                             android:fontFamily="@font/poppins_semi_bold"
-                            android:text="Alamat Lengkap : "
+                            android:text="@string/alamat_lengkap"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
 
@@ -170,12 +175,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_4sdp"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_location" />
+                            android:src="@drawable/ic_location"
+                            android:contentDescription="@string/image" />
 
                         <TextView
                             android:id="@+id/alamat_lengkap"
@@ -183,7 +190,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_4sdp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Jl.Jendral Sudirman Kota Balikpapan"
+                            android:text="@string/jl_jendral_sudirman_kota_balikpapan"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11ssp" />
 
@@ -195,7 +202,7 @@
                         android:layout_marginStart="@dimen/_8sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:fontFamily="@font/poppins_semi_bold"
-                        android:text="Deskripsi Singkat Pelaku Ekraf : "
+                        android:text="@string/deskripsi_singkat_pelaku_ekraf"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_11ssp" />
 
