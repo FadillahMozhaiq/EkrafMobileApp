@@ -12,7 +12,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
-        android:contentDescription="image"
+        android:contentDescription="@string/image"
         android:src="@drawable/ic_icon_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
         android:id="@+id/logo_login"
         android:layout_width="240dp"
         android:layout_height="240dp"
-        android:contentDescription="image"
+        android:contentDescription="@string/image"
         android:src="@drawable/logo_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Email"
+        android:text="@string/email"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_login"
@@ -70,12 +70,13 @@
         android:drawableEnd="@drawable/ic_text_field_email"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_regular"
-        android:hint="Masukkan Email Anda"
+        android:hint="@string/masukkan_email_anda"
         android:inputType="textEmailAddress"
         android:paddingStart="15dp"
         android:paddingEnd="26dp"
         android:textColor="@color/black"
         android:textSize="12sp"
+        android:autofillHints="emailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -89,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Kata Sandi"
+        android:text="@string/kata_sandi"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
         app:layout_constraintHorizontal_bias="0.0"
@@ -106,9 +107,10 @@
         android:drawableEnd="@drawable/ic_password"
         android:elevation="2dp"
         android:fontFamily="@font/poppins_regular"
-        android:hint="Masukkan Kata Anda"
+        android:hint="@string/masukkan_kata_anda"
         android:inputType="textPassword"
         android:paddingStart="15dp"
+        android:autofillHints="password"
         android:paddingEnd="26dp"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -124,7 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="Lupa Password?"
+        android:text="@string/lupa_password"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,14 +147,15 @@
         android:clickable="true"
         android:background="@drawable/bg_button"
         android:fontFamily="@font/poppins_semi_bold"
-        android:text="Masuk"
+        android:text="@string/masuk"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_passwordLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/til_passwordLogin"
+        android:focusable="true" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -170,7 +173,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_regular"
-            android:text="Belum Punya Akun?"
+            android:text="@string/belum_punya_akun"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -184,34 +187,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Daftar Disini"
+            android:text="@string/daftar_disini"
             android:textAllCaps="false"
             android:textColor="@color/purple_700"
             android:textStyle="bold">
 
         </TextView>
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="381dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="-21dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="26dp" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
