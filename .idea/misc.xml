@@ -27,10 +27,10 @@
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/ic_text_field_email.xml" value="0.166" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/shape.xml" value="0.157" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
-        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_main.xml" value="0.3040834057341442" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_main2.xml" value="0.13186813186813187" />
-        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_register.xml" value="0.3812636165577342" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_register.xml" value="0.16666666666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/activity_spalsh_screen.xml" value="0.13134057971014493" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/content_main.xml" value="0.1381340579710145" />
@@ -43,7 +43,7 @@
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/home_page_fragment.xml" value="0.22" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/item_info_ekraf_terbaru.xml" value="0.18229166666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/nav_header_main.xml" value="0.22" />
-        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/profile_fragment.xml" value="0.22" />
+        <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/profile_fragment.xml" value="0.16666666666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/search_fragment.xml" value="0.18229166666666666" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/layout/search_merchant_fragment.xml" value="0.11141304347826086" />
         <entry key="..\:/Project/NavDrawerDefault/app/src/main/res/menu/activity_main_drawer.xml" value="0.22" />
