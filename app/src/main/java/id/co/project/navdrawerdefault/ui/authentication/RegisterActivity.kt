@@ -23,7 +23,6 @@ class RegisterActivity : AppCompatActivity() {
         binding.btnTextRegister.setOnClickListener {
             Intent(this@RegisterActivity, LoginActivity::class.java).also {
                 startActivity(it)
-                Toast.makeText(this@RegisterActivity, "Berhasil Daftar", Toast.LENGTH_SHORT).show()
 
             }
         }
@@ -33,6 +32,7 @@ class RegisterActivity : AppCompatActivity() {
         binding.buttonSignUp.setOnClickListener {
             Intent(this@RegisterActivity, LoginActivity::class.java).also {
                 startActivity(it)
+                Toast.makeText(this@RegisterActivity, "Berhasil Daftar", Toast.LENGTH_LONG).show()
                 finish()
             }
         }
