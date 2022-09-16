@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun buttonForgotPassword() {
         binding.tvForgotPassword.setOnClickListener {
-            Toast.makeText(this@LoginActivity, "Fitur Tidak Belum Tersedia", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@LoginActivity, "Fitur Belum Tersedia", Toast.LENGTH_SHORT).show()
         }
     }
 
