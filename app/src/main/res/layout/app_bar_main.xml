@@ -29,9 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-        android:elevation="12dp"
         android:background="?android:attr/windowBackground"
-        app:menu="@menu/buttom_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:elevation="12dp"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/buttom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
