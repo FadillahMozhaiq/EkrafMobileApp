@@ -21,15 +21,14 @@
 
     <TextView
         android:id="@+id/tv_tittle_signIn"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/masuk"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/back_button_login"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +36,7 @@
         android:id="@+id/logo_login"
         android:layout_width="240dp"
         android:layout_height="240dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/image"
         android:src="@drawable/logo_2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,10 +49,9 @@
 
     <TextView
         android:id="@+id/tv_tittle_email"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/email"
         android:textColor="@color/black"
@@ -64,8 +63,9 @@
         android:id="@+id/til_emailLogin"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="emailAddress"
         android:background="@drawable/bg_search"
         android:drawableEnd="@drawable/ic_text_field_email"
         android:elevation="2dp"
@@ -76,7 +76,6 @@
         android:paddingEnd="26dp"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:autofillHints="emailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -86,23 +85,23 @@
 
     <TextView
         android:id="@+id/tv_tittle_password"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/kata_sandi"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_tittle_email"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_emailLogin" />
 
     <EditText
         android:id="@+id/til_passwordLogin"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="password"
         android:background="@drawable/bg_search"
         android:drawableEnd="@drawable/ic_password"
         android:elevation="2dp"
@@ -110,7 +109,6 @@
         android:hint="@string/masukkan_kata_anda"
         android:inputType="textPassword"
         android:paddingStart="15dp"
-        android:autofillHints="password"
         android:paddingEnd="26dp"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -123,15 +121,14 @@
 
     <TextView
         android:id="@+id/tv_forgotPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/lupa_password"
         android:textColor="@color/purple_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_passwordLogin"
         app:layout_constraintVertical_bias="0.052">
 
@@ -141,11 +138,12 @@
         android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="56dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:clickable="true"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:focusable="true"
         android:fontFamily="@font/poppins_semi_bold"
         android:text="@string/masuk"
         android:textAllCaps="false"
@@ -154,8 +152,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_passwordLogin"
-        android:focusable="true" />
+        app:layout_constraintTop_toBottomOf="@+id/til_passwordLogin" />
 
     <LinearLayout
         android:layout_width="wrap_content"
