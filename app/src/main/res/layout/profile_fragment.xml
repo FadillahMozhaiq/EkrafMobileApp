@@ -13,14 +13,13 @@
 
         <ImageButton
             android:id="@+id/back_button_login"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/white"
             android:contentDescription="@string/image"
             android:src="@drawable/ic_icon_back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +27,7 @@
             android:id="@+id/tv_tittle_setting_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/pengaturan_profile"
@@ -42,7 +42,7 @@
             android:id="@+id/tv_tittle_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="@dimen/_20sdp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/title_name"
@@ -55,12 +55,12 @@
             android:id="@+id/til_name_profile"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="name"
             android:background="@drawable/bg_search"
             android:drawableEnd="@drawable/ic_text_field_username"
             android:elevation="2dp"
-            android:autofillHints="name"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/masukkan_nama_anda"
             android:inputType="textEmailAddress"
@@ -73,16 +73,14 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_tittle_name"
-            app:layout_constraintVertical_bias="0.002">
-        </EditText>
-
+            app:layout_constraintVertical_bias="0.002"></EditText>
 
 
         <TextView
             android:id="@+id/tv_tittle_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/title_et_email"
@@ -95,8 +93,8 @@
             android:id="@+id/til_email_profile"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:autofillHints="emailAddress"
             android:background="@drawable/bg_search"
             android:drawableEnd="@drawable/ic_text_field_email"
@@ -114,25 +112,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_tittle_email"
             app:layout_constraintVertical_bias="0.002" />
+
         <TextView
             android:id="@+id/tv_tittle_no_hp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/nomor_hp"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tv_tittle_email"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_email_profile" />
 
         <EditText
             android:id="@+id/til_no_hp"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:autofillHints="phone"
             android:background="@drawable/bg_search"
             android:elevation="2dp"
@@ -152,24 +150,23 @@
 
         <TextView
             android:id="@+id/tv_tittle_subsektor_ekraf"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/sub_sektor_ekraf"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tv_tittle_email"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_no_hp" />
 
         <EditText
             android:id="@+id/til_subsektor_ekraf"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:autofillHints="phone"
-            android:layout_marginEnd="30dp"
             android:background="@drawable/bg_search"
             android:elevation="2dp"
             android:fontFamily="@font/poppins_regular"
@@ -188,26 +185,25 @@
 
         <TextView
             android:id="@+id/tv_tittle_address"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/alamat"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tv_tittle_email"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_subsektor_ekraf" />
 
         <EditText
             android:id="@+id/til_address"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="postalAddress"
             android:background="@drawable/bg_search"
             android:elevation="2dp"
-            android:autofillHints="postalAddress"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/jl_pangeran_dipenogoro_no_23"
             android:inputType="textEmailAddress"
@@ -223,28 +219,26 @@
             app:layout_constraintVertical_bias="0.002" />
 
 
-
         <TextView
             android:id="@+id/tv_tittle_language"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/bahasa"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="@+id/tv_tittle_email"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/tv_tittle_email"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_address" />
 
         <EditText
             android:id="@+id/til_language"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/bg_search"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:autofillHints="username"
+            android:background="@drawable/bg_search"
             android:elevation="2dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/bahasa_indonesia"
@@ -255,23 +249,23 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_tittle_language"
             app:layout_constraintVertical_bias="0.002" />
+
         <Button
             android:id="@+id/button_update_profile"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="@dimen/_23sdp"
+            android:layout_marginEnd="24dp"
             android:layout_marginBottom="@dimen/_70sdp"
             android:background="@drawable/bg_button"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="@string/perbarui_profil"
             android:gravity="center"
+            android:text="@string/perbarui_profil"
             android:textAllCaps="false"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintBottom_toBottomOf="parent"
