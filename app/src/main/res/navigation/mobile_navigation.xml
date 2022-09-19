@@ -27,12 +27,7 @@
         <action
             android:id="@+id/action_homePageFragment_to_nav_new_info"
             app:destination="@id/nav_new_info" />
-        <action
-            android:id="@+id/action_homePageFragment_to_addDataEkrafTerbaru"
-            app:destination="@id/addDataEkrafTerbaru" />
-        <action
-            android:id="@+id/action_homePageFragment_to_addNewInfoFragment"
-            app:destination="@id/addNewInfoFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
@@ -45,7 +40,7 @@
         android:label="Ekraf Mobile"
         tools:layout="@layout/favorite_fragment" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/nav_setting"
         android:name="id.co.project.navdrawerdefault.ui.navigationBottom.profile.ProfileFragment"
         android:label="Ekraf Mobile"
         tools:layout="@layout/profile_fragment" />
@@ -70,14 +65,15 @@
         android:label="app_bar_main"
         tools:layout="@layout/app_bar_main" />
     <fragment
-        android:id="@+id/addDataEkrafTerbaru"
+        android:id="@+id/nav_add_data_pelaku_ekraf"
         android:name="id.co.project.navdrawerdefault.ui.navigationDrawer.navAddNewInfo.AddDataEkrafTerbaru"
-        android:label="Tambah Data Terbaru Ekraf"
+        android:label="Ekraf Mobile"
         tools:layout="@layout/fragment_tambah_data_ekraf_terbaru"/>
     <fragment
-        android:id="@+id/addNewInfoFragment"
+        android:id="@+id/nav_add_new_info"
         android:name="id.co.project.navdrawerdefault.ui.navigationDrawer.navAddNewInfo.AddNewInfoFragment"
-        android:label=""
+        android:label="Ekraf Mobile"
         tools:layout="@layout/fragment_home"/>
+
 
 </navigation>

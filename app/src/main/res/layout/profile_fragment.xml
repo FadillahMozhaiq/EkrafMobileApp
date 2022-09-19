@@ -63,7 +63,7 @@
             android:elevation="2dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/masukkan_nama_anda"
-            android:inputType="textEmailAddress"
+            android:inputType="textPersonName"
             android:paddingStart="20dp"
             android:paddingEnd="26dp"
             android:textColor="@color/black"
@@ -73,7 +73,9 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_tittle_name"
-            app:layout_constraintVertical_bias="0.002"></EditText>
+            app:layout_constraintVertical_bias="0.002">
+
+        </EditText>
 
 
         <TextView
@@ -136,7 +138,7 @@
             android:elevation="2dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/_085323453243"
-            android:inputType="textEmailAddress"
+            android:inputType="numberDecimal"
             android:paddingStart="20dp"
             android:paddingEnd="26dp"
             android:textColor="@color/black"
@@ -160,28 +162,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/til_no_hp" />
 
-        <EditText
-            android:id="@+id/til_subsektor_ekraf"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/subsektor_setting"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:autofillHints="phone"
             android:background="@drawable/bg_search"
-            android:elevation="2dp"
-            android:fontFamily="@font/poppins_regular"
-            android:hint="@string/aplikasi"
-            android:inputType="textEmailAddress"
-            android:paddingStart="20dp"
-            android:paddingEnd="26dp"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="Pilih"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_tittle_subsektor_ekraf"
-            app:layout_constraintVertical_bias="0.002" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_tittle_subsektor_ekraf">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_menu_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:id="@+id/tv_tittle_address"
@@ -193,7 +194,7 @@
             android:text="@string/alamat"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/til_subsektor_ekraf" />
+            app:layout_constraintTop_toBottomOf="@+id/subsektor_setting" />
 
         <EditText
             android:id="@+id/til_address"
@@ -242,7 +243,7 @@
             android:elevation="2dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="@string/bahasa_indonesia"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:paddingStart="20dp"
             android:paddingEnd="26dp"
             android:textColor="@color/black"

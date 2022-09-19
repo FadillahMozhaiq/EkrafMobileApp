@@ -32,14 +32,15 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
+                R.id.nav_add_data_pelaku_ekraf,
                 R.id.nav_add_new_info,
                 R.id.nav_search_merchant,
                 R.id.nav_new_info,
                 R.id.nav_merchant,
+                R.id.nav_setting,
                 R.id.homePageFragment,
                 R.id.searchFragment,
                 R.id.favoriteFragment,
-                R.id.profileFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
