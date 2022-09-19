@@ -1,24 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="id.co.project.navdrawerdefault.ui.navigationDrawer.navAddNewInfo.AddNewInfoFragment">
+    android:layout_height="match_parent">
 
-   <TextView
-       android:id="@+id/text_home"
+
+   <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="8dp"
-       android:layout_marginTop="8dp"
-       android:layout_marginEnd="8dp"
-       android:textAlignment="center"
-       android:textSize="20sp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.507" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+       android:layout_height="wrap_content">
+
+      <ImageButton
+          android:id="@+id/back_button_login"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:backgroundTint="@color/white"
+          android:contentDescription="@string/image"
+          android:src="@drawable/ic_icon_back"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/tv_tittle_setting_profile"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="16dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/tambah_info_terbaru_ekraf"
+          android:textColor="@color/black"
+          android:textSize="@dimen/_14ssp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toEndOf="@+id/back_button_login"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/tv_tittle_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="@dimen/_20sdp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/judul_info_terbaru"
+          android:textColor="@color/black"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tv_tittle_setting_profile"
+          tools:ignore="MissingConstraints" />
+
+      <EditText
+          android:id="@+id/til_name_profile"
+          android:layout_width="match_parent"
+          android:layout_height="52dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:autofillHints="name"
+          android:background="@drawable/bg_search"
+          android:elevation="2dp"
+          android:fontFamily="@font/poppins_regular"
+          android:hint="@string/hint_info_terbaru"
+          android:inputType="textEmailAddress"
+          android:paddingStart="20dp"
+          android:paddingEnd="26dp"
+          android:textColor="@color/black"
+          android:textSize="12sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tv_tittle_name"
+          app:layout_constraintVertical_bias="0.002">
+
+      </EditText>
+
+
+      <TextView
+          android:id="@+id/tv_tittle_email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="12dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/sub_sektor_ekraf"
+          android:textColor="@color/black"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/til_name_profile"
+          tools:ignore="MissingConstraints" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/subsektor"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:background="@drawable/bg_search"
+          android:hint="Pilih"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_tittle_email">
+
+         <AutoCompleteTextView
+             android:id="@+id/dropdown_menu_add"
+             android:layout_width="match_parent"
+             android:background="@drawable/bg_search"
+             android:layout_height="wrap_content"
+             android:inputType="none" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <TextView
+          android:id="@+id/tv_tittle_no_hp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="12dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="Konten"
+          android:textColor="@color/black"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/subsektor" />
+
+      <EditText
+          android:id="@+id/til_no_hp"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:autofillHints="phone"
+          android:background="@drawable/bg_search"
+          android:elevation="2dp"
+          android:fontFamily="@font/poppins_regular"
+          android:inputType="textShortMessage"
+          android:padding="15dp"
+          android:gravity="top"
+          android:textColor="@color/black"
+          android:textSize="12sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/tv_tittle_no_hp"
+          app:layout_constraintVertical_bias="0.002" />
+
+      <TextView
+          android:id="@+id/tv_tittle_foto_pendukung"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="12dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="Foto Pendukung"
+          android:textColor="@color/black"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/til_no_hp" />
+
+
+      <Button
+          android:id="@+id/button_upload_foto"
+          android:layout_width="0dp"
+          android:layout_height="35dp"
+          android:layout_marginEnd="24dp"
+          android:background="@drawable/bg_button"
+          android:fontFamily="@font/poppins_semi_bold"
+          android:gravity="center"
+          android:text="Upload"
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:textSize="10sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tv_tittle_foto_pendukung" />
+
+      <Button
+          android:id="@+id/button_update"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="35dp"
+          android:layout_marginEnd="24dp"
+          android:background="@drawable/bg_button"
+          android:fontFamily="@font/poppins_semi_bold"
+          android:gravity="center"
+          android:text="Simpan"
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:textSize="@dimen/_12ssp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/button_upload_foto" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

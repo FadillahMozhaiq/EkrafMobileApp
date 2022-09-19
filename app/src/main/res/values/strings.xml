@@ -80,4 +80,9 @@
     <string name="bahasa_indonesia">Bahasa Indonesia</string>
     <string name="perbarui_profil">Perbarui Profil</string>
     <string name="fragment_search">Fragment Search</string>
+    <string name="tambah_data_pelaku_ekraf">Tambah Data Pelaku Ekraf</string>
+    <string name="tambah_info_terbaru_ekraf">Tambah Info Terbaru Ekraf</string>
+    <string name="judul_info_terbaru">Judul Info Terbaru</string>
+    <string name="hint_info_terbaru">Masukkan Judul Info Terbaru</string>
+    <string name="sub_ekraf">Sub Ekraf Terbaru</string>
 </resources>

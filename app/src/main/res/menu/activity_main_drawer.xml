@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item
+        android:id="@+id/nav_add_data_pelaku_ekraf"
+        android:icon="@drawable/ic_adds"
+        android:title="@string/tambah_data_pelaku_ekraf" />
         <item
             android:id="@+id/nav_add_new_info"
             android:icon="@drawable/ic_adds"
